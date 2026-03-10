@@ -10,46 +10,46 @@ public class Main {
         Scanner scan = new Scanner(System.in);
 
 
-                System.out.println("-----Painel de Login-----");
-                System.out.println("     Registrar conta     ");
-                System.out.print("Usuário: ");
-                name = scan.nextLine();
-                System.out.print("Senha: ");
-                senha = scan.nextLine();
-                System.out.println("Registro Feito com sucesso!");
-                System.out.println("Iniciando Login...");
-                for (int i = 0; i <= 10; i++) {
-                    System.out.print("■");
+        System.out.println("-----Painel de Login-----");
+        System.out.println("     Registrar conta     ");
+        System.out.print("Usuário: ");
+        name = scan.nextLine();
+        System.out.print("Senha: ");
+        senha = scan.nextLine();
+        System.out.println("Registro Feito com sucesso!");
+        System.out.println("Iniciando Login...");
+        for (int i = 0; i <= 10; i++) {
+            System.out.print("■");
 
-                    try {
-                        Thread.sleep(300);
-                    } catch (InterruptedException e) {
-                        e.printStackTrace();
-                    }
-                }
+            try {
+                Thread.sleep(300);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+        }
         for (int i = 0; i < 50; i++) {
             System.out.println("                ");
         }
 
-                do {
-                    System.out.println(" ");
-                    System.out.println("-----Painel de Login-----");
-                    System.out.print("| Digite seu usuário: ");
-                    entradaUsuario = scan.nextLine();
-                    System.out.print("| Digite sua Senha: ");
-                    entradaSenha = scan.nextLine();
-                    if (entradaUsuario.equals(name) && entradaSenha.equals(senha)) {
-                        System.out.println("Usuario e senha corretos!");
-                        System.out.println("Seja Bem Vindo!");
-                        log = 1;
-                    } else {
-                        System.out.println("Usuário ou Senha Incorreto");
-                        System.out.println("Sistema Fechando...");
-                        log = 0;
-                    }
+        do {
+            System.out.println(" ");
+            System.out.println("-----Painel de Login-----");
+            System.out.print("| Digite seu usuário: ");
+            entradaUsuario = scan.nextLine();
+            System.out.print("| Digite sua Senha: ");
+            entradaSenha = scan.nextLine();
+            if (entradaUsuario.equals(name) && entradaSenha.equals(senha)) {
+                System.out.println("Usuario e senha corretos!");
+                System.out.println("Seja Bem Vindo!");
+                log = 1;
+            } else {
+                System.out.println("Usuário ou Senha Incorreto");
+                System.out.println("Sistema Fechando...");
+                log = 0;
+            }
 
 
-                } while (log != 1);
+        } while (log != 1);
 
 
         int escolha;
